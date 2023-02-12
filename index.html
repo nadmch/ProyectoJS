@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ES">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" class="formulario" id="formulario">
+      <h1 class="titulo">CREAR CUENTA</h1>
+
+      <div class="container">
+        <!--- NOMBRE -->
+        <div class="entrada" id="form_name">
+          <label for="name" class="entrada_label">Nombre</label>
+          <input type="text" id="name" class="campo" />
+        </div>
+        <div id="nombre_error" class="error_container">
+          <img class="icono_error" src="./images/error-icon.svg" />
+          <b> <p class="error_campo_vacio">Rellene este campo</p></b>
+        </div>
+        <div class="check_container">
+          <img class="icono_check" src="./images/success-icon.svg" />
+        </div>
+
+        <!--- EMAIL -->
+        <div class="entrada">
+          <label for="email" class="entrada_email">Email</label>
+          <input type="email" class="campo" id="email" />
+        </div>
+        <div id="email_error" class="error_container">
+          <img class="icono_error" src="./images/error-icon.svg" />
+          <b> <p class="error_campo_vacio">Rellene este campo</p></b>
+          <b> <p class="error_email">Email inválido</p> </b>
+        </div>
+        <div class="check_container">
+          <img class="icono_check" src="./images/success-icon.svg" />
+        </div>
+
+        <!--- PASSWORD1 -->
+        <div class="entrada">
+          <label for="password" class="entrada_password">Clave</label>
+          <input type="password" class="campo" id="password" />
+        </div>
+        <div id="password_error" class="error_container">
+          <img class="icono_error" src="./images/error-icon.svg" />
+          <b><p class="error_campo_vacio">Rellene este campo</p> </b>
+          <b>
+            <p class="error_caracteres">No debe tener menos de 8 caracteres</p>
+          </b>
+        </div>
+        <div class="check_container">
+          <img class="icono_check" src="./images/success-icon.svg" />
+        </div>
+
+        <!--- PASSWORD2 -->
+        <div class="entrada">
+          <label for="password" class="entrada__password"
+            >Confirme su clave</label
+          >
+          <input type="password" class="campo" id="password2" />
+        </div>
+        <div class="error_container">
+          <img class="icono_error" src="./images/error-icon.svg" />
+          <b><p class="error_campo_vacio">Rellene este campo</p> </b>
+          <b><p class="error_password">Las contraseñas no coinciden</p> </b>
+        </div>
+        <div class="check_container">
+          <img class="icono_check" src="./images/success-icon.svg" />
+        </div>
+      </div>
+
+      <button type="submit" id="button" class="boton_enviar">ENVIAR</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
